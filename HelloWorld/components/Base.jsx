@@ -5,6 +5,7 @@ import {
   View,
   Image,
   ImageBackground,
+  Pressable,
   Button
 } from "react-native";
 const flowerImg = require("../assets/image/flower.jpg");
@@ -16,8 +17,9 @@ export default function Base() {
         <Text style={{ color: "white" }}>
           <h1>Flowers</h1>
         </Text>
+        <Pressable onPress={()=>console.log("Image Pressed") }>
         <Image source={flowerImg} style={{ width: 350, height: 300 }} />
-
+        </Pressable>
         <StatusBar style="auto" />
         {/*
       <ImageBackground source={flowerImg} style={{flex:1}}>
