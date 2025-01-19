@@ -22,7 +22,7 @@ export default function Base() {
       <Pressable onPress={() => console.log("Image Pressed")}>
         <Image source={flowerImg} style={{ width: 350, height: 300 }} />
       </Pressable>
-      <StatusBar style="auto" />
+      <StatusBar backgroundColor="lightPink" />
       {/*
       <ImageBackground source={flowerImg} style={{flex:1}}>
         <Text>Image Text</Text>
