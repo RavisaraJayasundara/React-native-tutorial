@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View} from "react-native";
 import Base from "./components/Base";
+import Base2 from "./components/Base2";
 import { ScrollView } from "react-native-web";
 
 export default function App() {
@@ -8,7 +9,8 @@ export default function App() {
     <ScrollView>
     <View style={styles.container}>
       <View>
-        <Base />
+       {/* <Base />*/}
+        <Base2 />
       </View>
       <StatusBar style="auto" />
     </View>
@@ -19,7 +21,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    //backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "plum",

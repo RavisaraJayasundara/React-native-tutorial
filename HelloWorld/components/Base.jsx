@@ -9,6 +9,7 @@ import {
   Pressable,
   Button,
   Modal,
+ 
 } from "react-native";
 const flowerImg = require("../assets/image/flower.jpg");
 
@@ -16,8 +17,8 @@ export default function Base() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   return (
     <View style={styles.container}>
-      <Text style={{ color: "white" }}>
-        <h1>Flowers</h1>
+      <Text style={{ color: "white" ,fontSize:"36",fontWeight:"bold"}}>
+        Flowers
       </Text>
       <Pressable onPress={() => console.log("Image Pressed")}>
         <Image source={flowerImg} style={{ width: 350, height: 300 }} />
@@ -41,8 +42,9 @@ export default function Base() {
         and wonder, connecting us to the natural world.
       </Text>
 
-      <Text style={{ color: "white" }}>
-        <h1>Dogs</h1>
+       
+      <Text style={{ color: "white",fontSize:"36",fontWeight:"bold" }}>
+        Dogs
       </Text>
       <Image
         source={{ uri: "https://picsum.photos/id/237/200/300" }}
